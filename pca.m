@@ -9,7 +9,7 @@ function [ X_red, U ] = pca(X)
     Sum = 0;
     for K = 1:n
         Sum = Sum + s(K);
-        if Sum / total >= 0.999
+        if Sum / total >= 0.99
             break;
         end
     end
